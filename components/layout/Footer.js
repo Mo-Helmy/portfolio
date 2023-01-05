@@ -7,21 +7,20 @@ const Footer = () => {
     <Stack bgcolor="#a2a1a6" width="100vw" height="20vh">
       <Container>
         <Stack direction="row" p={2} alignItems="center" spacing={1}>
-          <Typography
-            style={{ color: '#0952a4', fontSize: '1.6rem', fontWeight: 'bold' }}
-          >
+          <Typography style={{ color: '#0952a4', fontWeight: 'bold' }}>
             {' '}
             ©{' '}
           </Typography>
-          <Typography color="#212121" variant="h6">
+          <Typography color="#212121" variant={{ xs: 'body2', sm: 'h6' }}>
             {new Date().getFullYear()}{' '}
             <span style={{ fontWeight: 'bold' }}>Mohamed Helmy</span>, Open
             Source
           </Typography>
           <Box>
-            <Link href="https://github.com">
+            <Link href="https://github.com/Mo-Helmy/portfolio">
               <GitHub
-                fontSize="large"
+                // fontSize={{ xs: 'small', md: 'large' }}
+                fontSize="medium"
                 sx={{ color: '#212121', '&:hover': { color: '#1976d2' } }}
               />
             </Link>
