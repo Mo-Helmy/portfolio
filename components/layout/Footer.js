@@ -11,7 +11,7 @@ const Footer = () => {
             {' '}
             ©{' '}
           </Typography>
-          <Typography color="#212121" variant={{ xs: 'body2', sm: 'h6' }}>
+          <Typography color="#212121" variant="body2">
             {new Date().getFullYear()}{' '}
             <span style={{ fontWeight: 'bold' }}>Mohamed Helmy</span>, Open
             Source
@@ -19,7 +19,6 @@ const Footer = () => {
           <Box>
             <Link href="https://github.com/Mo-Helmy/portfolio">
               <GitHub
-                // fontSize={{ xs: 'small', md: 'large' }}
                 fontSize="medium"
                 sx={{ color: '#212121', '&:hover': { color: '#1976d2' } }}
               />
